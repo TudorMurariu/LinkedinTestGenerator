@@ -33,7 +33,7 @@ export class AppMainComponent implements OnInit{
     {
       console.log("YAYYYY")
       console.log(this.router.url)
-      this.router.navigate(['/test']);
+      this.router.navigate(['/test', { category: this.selectedValue }]);
     }
     console.log(this.selectedValue);
   }
