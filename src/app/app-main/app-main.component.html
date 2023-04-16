@@ -1,0 +1,15 @@
+<div class="overlay">
+    <div class="container">
+        <h1 class="title">Simulate a linkedin test</h1>
+        <br>
+        <select class="select" (change)="onSelectionChange($event)"> 
+            <option value="">Choose category</option>
+            <option *ngFor="let category of categories" [value]="category">
+                {{ category }}
+            </option>
+        </select>
+        <button class="button" (click)="onStartTest($event)">
+            Start test
+        </button>
+    </div>
+</div>
