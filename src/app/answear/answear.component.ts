@@ -39,16 +39,16 @@ export class AnswearComponent implements OnInit {
     else {
       switch(this.question.answer) {
         case 1:
-          this.style1 = "background-color: #4caf50; color: #fff; border-color: #4caf50;";
+          this.style1 = "color: #4caf50; border-color: #4caf50; border-width: thick; font-weight: bold;";
           break;
         case 2:
-          this.style2 = "background-color: #4caf50; color: #fff; border-color: #4caf50;";
+          this.style2 = "color: #4caf50; border-color: #4caf50; border-width: thick; font-weight: bold;";
           break;
         case 3:
-          this.style3 = "background-color: #4caf50; color: #fff; border-color: #4caf50;";
+          this.style3 = "color: #4caf50; border-color: #4caf50; border-width: thick; font-weight: bold;";
           break;
         case 4:
-          this.style4 = "background-color: #4caf50; color: #fff; border-color: #4caf50;";
+          this.style4 = "color: #4caf50; border-color: #4caf50; border-width: thick; font-weight: bold;";
           break;
         default:
           console.log("eroare");
