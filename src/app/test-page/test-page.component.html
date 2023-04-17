@@ -1,2 +1,5 @@
-<p>hi</p>
-<app-question *ngFor="let question of questions"></app-question>
+<app-question *ngFor="let question of showedQuestions" [question]="question" (choiseMade)="onChoiseMade($event)">
+</app-question>
+<button class="button" (click)="onSubmit($event)">
+    Submit
+</button>

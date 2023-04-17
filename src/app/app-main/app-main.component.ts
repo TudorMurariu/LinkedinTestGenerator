@@ -30,11 +30,6 @@ export class AppMainComponent implements OnInit{
 
   onStartTest(event: any) {
     if(this.categories.includes(this.selectedValue))
-    {
-      console.log("YAYYYY")
-      console.log(this.router.url)
       this.router.navigate(['/test', { category: this.selectedValue }]);
-    }
-    console.log(this.selectedValue);
   }
 }

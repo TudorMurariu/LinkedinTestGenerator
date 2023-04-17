@@ -1,0 +1,10 @@
+<div class="container">
+    <h2 class="question"> {{ question.text }} </h2>
+    <pre><code> {{ question.code }} </code></pre>
+    <div class="choices">
+        <div class="choice" [style]="style1"><span>{{ question.r1 }}</span></div>
+        <div class="choice" [style]="style2"><span>{{ question.r2 }}</span></div>
+        <div class="choice" [style]="style3"><span>{{ question.r3 }}</span></div>
+        <div class="choice" [style]="style4"><span>{{ question.r4 }}</span></div>
+    </div>
+</div>

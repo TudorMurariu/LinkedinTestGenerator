@@ -1,13 +1,14 @@
 <div class="container">
-    <h2 class="question">What is the capital of France?</h2>
+    <h2 class="question"> {{ question.text }} </h2>
+    <pre><code> {{ question.code }} </code></pre>
     <div class="choices">
-        <input type="radio" id="paris" name="capital" value="paris">
-        <label for="paris">Paris</label><br>
-        <input type="radio" id="london" name="capital" value="london">
-        <label for="london">London</label><br>
-        <input type="radio" id="berlin" name="capital" value="berlin">
-        <label for="berlin">Berlin</label><br>
-        <input type="radio" id="tokyo" name="capital" value="tokyo">
-        <label for="tokyo">Tokyo</label><br>
+        <input type="radio" id="{{ question.id }}paris" name="{{ question.id }}" value="paris" (change)="onRadioChange($event)">
+        <label for="{{ question.id }}paris"> {{ question.r1 }} </label><br>
+        <input type="radio" id="{{ question.id }}london" name="{{ question.id }}" value="london" (change)="onRadioChange($event)">
+        <label for="{{ question.id }}london"> {{ question.r2 }} </label><br>
+        <input type="radio" id="{{ question.id }}berlin" name="{{ question.id }}" value="berlin" (change)="onRadioChange($event)">
+        <label for="{{ question.id }}berlin"> {{ question.r3 }} </label><br>
+        <input type="radio" id="{{ question.id }}tokyo" name="{{ question.id }}" value="tokyo" (change)="onRadioChange($event)">
+        <label for="{{ question.id }}tokyo"> {{ question.r4 }} </label><br>
     </div>
 </div>

@@ -1,11 +1,12 @@
 .container {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     border: 2px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8%;
 }
 
 .question {

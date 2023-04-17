@@ -7,10 +7,13 @@ import { TestPageComponent } from './test-page/test-page.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { ResultPageComponent } from './result-page/result-page.component';
+import { AnswearComponent } from './answear/answear.component';
 
 const routes: Routes = [
   { path: '', component: AppMainComponent },
-  { path: 'test', component: TestPageComponent }
+  { path: 'test', component: TestPageComponent },
+  { path: 'results', component: ResultPageComponent }
 ];
 
 @NgModule({
@@ -18,7 +21,9 @@ const routes: Routes = [
     AppMainComponent,
     QuestionComponent,
     TestPageComponent,
-    AppComponent
+    AppComponent,
+    ResultPageComponent,
+    AnswearComponent
   ],
   imports: [
     BrowserModule,
