@@ -185,7 +185,7 @@ auto x = 4000.22;
 - [ ] It specifies that x is a variable with automatic storage duration.
 - [ ] It specifies that more memory will be allocated for x in case it needs more space, avoiding loss of data due to overflow.
 
-#### Q13. A class template is a \_?
+#### Q13. A class template is a _?
 
 - [x] class written with the generic programming paradigm, specifying behavior in terms of type parameter rather than specific type.
 - [ ] blank superclass intended for inheritance and polymorphism.
@@ -756,8 +756,7 @@ std::vector<std::vector<int>> thematrix;
 - [ ] The correct syntax should be: `std::vector[std::vector[int]] thematrix;`
 - [x] `>>` is parsed as the shift-right operator, and thus results in a compile error.
 
-#### Q42. What is the statement below equivalent to?
-#### Q42.b. What is the statement equivalent to?
+#### Q42. What is the statement equivalent to?
 
 ```cpp
 sprite->x
