@@ -1,3 +1,6 @@
+<div class="timer-container">
+    <div class="timer"> {{ time }} </div>
+</div>
 <app-question *ngFor="let question of showedQuestions" [question]="question" (choiseMade)="onChoiseMade($event)">
 </app-question>
 <button class="button" (click)="onSubmit($event)">

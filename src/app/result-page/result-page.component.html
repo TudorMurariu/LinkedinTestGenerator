@@ -1,3 +1,6 @@
 <h1> {{ rightAnswers }} /15 </h1>
+<div class="timer-container">
+    <div class="timer"> {{ time }} </div>
+</div>
 <app-answear *ngFor="let question of shownedQuestions" [question]="question">
 </app-answear>

@@ -13,10 +13,15 @@ export class TestPageComponent implements OnInit {
   category: string = "";
   questions: Question[] = [];
   showedQuestions: Question[] = []; 
+  time: number = 0;
   
   constructor(private http: HttpClient, private route: ActivatedRoute, private router: Router, private questionService : QuestionServiceService) {}
 
   ngOnInit() {
+    const timer = setInterval(() => {
+      this.time++;
+    }, 1000);
+
     this.route.paramMap.subscribe(params => {
       const gotCategory = params.get('category');
       this.category =  gotCategory ? gotCategory : "Eroare-categorie";
@@ -90,7 +95,7 @@ export class TestPageComponent implements OnInit {
         right++;
     });
 
-    this.router.navigate(['/results', { rightAnswers: right }]);
+    this.router.navigate(['/results', { rightAnswers: right , time : this.time}]);
   }
 
   onChoiseMade(event: {id: number, choise: number}) {

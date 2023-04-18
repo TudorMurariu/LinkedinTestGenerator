@@ -12,6 +12,7 @@ import { QuestionServiceService } from '../question-service.service';
 export class ResultPageComponent implements OnInit {
   shownedQuestions: Question[] = [];
   rightAnswers: number = 0;
+  time: number = 0;
 
   constructor(private http: HttpClient, private route: ActivatedRoute, private questionService: QuestionServiceService) {}
 
@@ -21,7 +22,10 @@ export class ResultPageComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       const rightAnswers = params.get('rightAnswers');
       this.rightAnswers = Number(rightAnswers);
+      const time = params.get('time');
+      this.time = Number(time);
     });
   }
+
 
 }
