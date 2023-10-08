@@ -1,4 +1,5 @@
 # Linkedin test generator
+You can access the website here: https://tudormurariu.github.io/tudormurariu.github.io/
 
 ## When you visit the site, you'll see the main page as shown below:
 ![image](https://user-images.githubusercontent.com/30391543/232793934-6f54a568-0a2c-4c4f-9056-979a8bccc99d.png)
